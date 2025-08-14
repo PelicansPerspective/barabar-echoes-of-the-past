@@ -18,9 +18,10 @@ This is a **multi-disciplinary archaeological research project** combining theor
 
 ### LaTeX Research Documents
 - **Archaeological Report**: `barabar_report.tex` (traditional academic paper)
+- **Comprehensive Study**: `barabar_comprehensive_report.tex` (full interdisciplinary analysis with embedded visualizations)
 - **Physics Framework**: `% !TEX TS-program = pdflatex.txt` (EFT with cosmology/dark matter/quantum biology)
-- **Compilation**: Use `pdflatex` for both documents
-- **Dependencies**: Standard packages (amsmath, graphicx, multicol, authblk)
+- **Compilation**: Use `pdflatex` for all documents, followed by `bibtex` for bibliography processing
+- **Dependencies**: Standard packages (amsmath, graphicx, multicol, authblk, siunitx, booktabs)
 
 ### Key Data Architecture
 - **Archaeological Database**: 7 caves with patron, date, architectural features, acoustic properties
@@ -107,10 +108,11 @@ This is a **multi-disciplinary archaeological research project** combining theor
 - **Data visualization**: Embedded PNG charts from Python Plotly scripts
 
 ### LaTeX Document Workflows
-- **Archaeological Report**: Traditional academic format with figures and citations
-- **Physics Framework**: Mathematical notation with equation labeling (eq:L, eq:vev_exact)
+- **Archaeological Report**: `pdflatex barabar_report.tex` (traditional academic format)
+- **Comprehensive Study**: `pdflatex barabar_comprehensive_report.tex; bibtex barabar_comprehensive_report; pdflatex barabar_comprehensive_report.tex; pdflatex barabar_comprehensive_report.tex` (full interdisciplinary analysis with bibliography)
+- **Physics Framework**: `pdflatex "% !TEX TS-program = pdflatex.txt"` (note quotes for special filename)
 - **Cross-document consistency**: Shared figure references and measurement data
-- **Bibliography management**: arXiv citations with DOI links
+- **Bibliography management**: BibTeX workflow with `.bib` files for archaeological and scientific sources
 
 ### Research Data Validation
 - **Measurement consistency**: Surface roughness (RG 0.466) across documents
