@@ -4,7 +4,7 @@ A comprehensive archaeological study of the Barabar Caves (Bihar, India) - the o
 
 ## 🌐 Live Interactive Explorer
 
-**[View the Barabar Caves Explorer](https://jbogner1618.github.io/barabar-echoes-of-the-past/)**
+**[View the Barabar Caves Explorer](https://pelicansperspective.github.io/barabar-echoes-of-the-past/)**
 
 ## 🏛️ Project Overview
 
@@ -101,8 +101,8 @@ This project represents a unique intersection of:
 
 ### Local Setup
 ```bash
-git clone https://github.com/jbogner1618/barabar-pngs.git
-cd barabar-pngs
+git clone https://github.com/pelicansperspective/barabar-echoes-of-the-past.git
+cd barabar-echoes-of-the-past
 # Open index.html in browser for local viewing
 ```
 
