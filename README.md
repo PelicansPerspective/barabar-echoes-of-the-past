@@ -99,8 +99,17 @@ This project represents a unique intersection of:
 ### Publications
 
 - `barabar_comprehensive_report.pdf` - Full interdisciplinary research paper
-- `barabar_report.pdf` - Traditional archaeological analysis
+- [`barabar_report.pdf`](./research/barabar_report.pdf) - Traditional archaeological analysis
 - LaTeX source files with complete bibliography and figure references
+
+### Data Repository
+
+#### Zenodo Record: Barabar Echoes Dataset and Report
+
+- **Publication Date:** August 14, 2025
+- **DOI (Versioned):** [10.5281/zenodo.16870852](https://doi.org/10.5281/zenodo.16870852)
+- **DOI (All Versions):** [10.5281/zenodo.16870851](https://doi.org/10.5281/zenodo.16870851)
+- **Files:** The record includes the [`barabar_data.zip`](./data/barabar_data.zip) (with audio files, roughness traces, spectrograms, and metadata) and the [`barabar_report.pdf`](./research/barabar_report.pdf).
 
 ### Data Sources
 

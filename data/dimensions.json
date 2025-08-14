@@ -1,0 +1,81 @@
+{
+  "Sudama Cave": {
+    "chamber": {
+      "shape": "circular",
+      "diameter_m": 7.32,
+      "height_m": 3.66,
+      "volume_m3": 153.8
+    },
+    "mandapa": {
+      "shape": "rectangular",
+      "length_m": 5.79,
+      "width_m": 3.66,
+      "height_m": 3.66,
+      "volume_m3": 77.5
+    },
+    "total_volume_m3": 231.3,
+    "surface_area_m2": {
+      "polished": 168.5,
+      "unpolished": 65.2
+    }
+  },
+  "Karna Chaupar": {
+    "chamber": {
+      "shape": "rectangular",
+      "length_m": 10.06,
+      "width_m": 4.27,
+      "height_m": 3.2,
+      "volume_m3": 137.4
+    },
+    "surface_area_m2": {
+      "polished": 135.1,
+      "unpolished": 43.0
+    }
+  },
+  "Lomas Rishi Cave": {
+    "chamber": {
+      "shape": "rectangular",
+      "length_m": 10.0,
+      "width_m": 5.18,
+      "height_m": 3.66,
+      "volume_m3": 189.6
+    },
+    "surface_area_m2": {
+      "polished": 155.2,
+      "unpolished": 51.8
+    }
+  },
+  "Visvakarma Cave": {
+    "chamber_1": {
+      "shape": "rectangular",
+      "length_m": 4.88,
+      "width_m": 2.44,
+      "height_m": 2.13,
+      "volume_m3": 25.4
+    },
+    "chamber_2": {
+      "shape": "circular",
+      "diameter_m": 2.44,
+      "height_m": 2.13,
+      "volume_m3": 9.9
+    },
+    "total_volume_m3": 35.3,
+    "surface_area_m2": {
+      "polished": 55.7,
+      "unpolished": 16.6
+    }
+  },
+  "Gopika Cave": {
+    "chamber": {
+      "shape": "rectangular",
+      "length_m": 13.95,
+      "width_m": 5.18,
+      "height_m": 3.2,
+      "volume_m3": 231.0
+    },
+    "surface_area_m2": {
+      "polished": 195.0,
+      "unpolished": 72.2
+    }
+  }
+}

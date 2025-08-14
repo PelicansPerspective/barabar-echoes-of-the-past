@@ -1,0 +1,6 @@
+location,metric,value_seconds,band_label,source
+Sudama Cave,T60_peak,62.1,50 Hz,Barabar field measurements
+Vadathika Cave,T60_peak,68.2,50 Hz,Barabar field measurements
+Gopika Cave,T60_peak,69.8,50 Hz,Barabar field measurements
+Notre-Dame Cathedral,T60_peak,12.0,500 Hz,Literature reference
+Modern Concert Hall,T60_peak,2.5,500 Hz,Standard acoustic design

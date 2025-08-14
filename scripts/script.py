@@ -1,90 +1,75 @@
+#!/usr/bin/env python3
+"""
+Builds data/barabar_caves_comprehensive_data.csv from component CSVs.
+
+Inputs (in data/):
+  - geometry_dimensions.csv    # name,length_m,width_m,height_m,volume_m3,notes
+  - surface_roughness_rz.csv   # name,rz_microns,trace_n,method,provenance
+  - acoustics_bands.csv        # name,band_hz,T30,T60,notes
+
+Output:
+  - barabar_caves_comprehensive_data.csv
+      columns: name,length_m,width_m,height_m,volume_m3,notes,rz_microns,trace_n,peak_T60_s,peak_band_hz
+"""
+
+from pathlib import Path
 import pandas as pd
+import sys
 
-# Create comprehensive data about Barabar and Nagarjuni caves
-caves_data = {
-    'Cave Name': [
-        'Sudama Cave', 'Lomas Rishi Cave', 'Karna Chaupar Cave', 'Visvakarma Cave',
-        'Gopika Cave', 'Vadathika Cave', 'Vapiyaka Cave'
-    ],
-    'Location': [
-        'Barabar Hill', 'Barabar Hill', 'Barabar Hill', 'Barabar Hill',
-        'Nagarjuni Hill', 'Nagarjuni Hill', 'Nagarjuni Hill'
-    ],
-    'Patron': [
-        'Emperor Ashoka', 'Emperor Ashoka (unfinished)', 'Emperor Ashoka', 'Emperor Ashoka',
-        'Dasaratha Maurya', 'Dasaratha Maurya', 'Dasaratha Maurya'
-    ],
-    'Date (BCE)': [
-        '261', '~250 (incomplete)', '245', '~250',
-        '~230', '~230', '~230'
-    ],
-    'Dedicated To': [
-        'Ajivika Sect', 'Buddhist Monks (intended)', 'Ajivika Sect', 'Ajivika Sect',
-        'Ajivika Sect', 'Ajivika Sect', 'Ajivika Sect'
-    ],
-    'Architectural Features': [
-        'Circular chamber, rectangular mandapa, polished walls',
-        'Chaitya arch entrance, elephant carvings, incomplete interior',
-        'Single rectangular room, finest inscriptions',
-        'Two rectangular rooms, Ashoka steps access',
-        'Largest cave, curved chambers, vaulted ceiling',
-        'Mirror chambers to Vapiyaka, 2:3 proportions',
-        'Identical to Vadathika, perfect geometric ratios'
-    ],
-    'Special Characteristics': [
-        'Mauryan polish perfection, 62-sec reverberation',
-        'Oldest chaitya arch design, inspiration for later architecture',
-        'Most detailed Ashokan inscriptions, 2.5mm precision',
-        'Complex multi-chamber design, cliff-face access',
-        'Longest echo chambers, 72-sec reverberation',
-        'Mathematical precision, exact proportional design',
-        'Geometric twin, resonance at 34.4 Hz'
-    ]
-}
+REQ_GEOM = {"name","length_m","width_m","height_m","volume_m3","notes"}
+REQ_ROUGH = {"name","rz_microns","trace_n"}
+REQ_AC = {"name","band_hz","T60"}
 
-caves_df = pd.DataFrame(caves_data)
-print("COMPREHENSIVE BARABAR AND NAGARJUNI CAVES DATA")
-print("=" * 60)
-print(caves_df.to_string(index=False))
+def fail(msg: str):
+    print(f"[build] ERROR: {msg}", file=sys.stderr)
+    sys.exit(1)
 
-# Save as CSV for the report
-caves_df.to_csv('barabar_caves_comprehensive_data.csv', index=False)
-print("\n\nData saved as CSV file for inclusion in report.")
+def check_cols(df: pd.DataFrame, required: set, label: str):
+    missing = required - set(df.columns)
+    if missing:
+        fail(f"{label} missing columns: {sorted(missing)}")
 
-# Create timeline data
-timeline_data = {
-    'Period': [
-        '3rd Century BCE', '261 BCE', '~250 BCE', '245 BCE', '~230 BCE', 
-        '1785 CE', '1861-1862 CE', '2009 CE', '2020-2025 CE'
-    ],
-    'Event': [
-        'Mauryan Empire at peak under Ashoka',
-        'Sudama Cave dedicated by Ashoka to Ajivikas',
-        'Lomas Rishi and Visvakarma caves constructed',
-        'Karna Chaupar Cave completed with inscriptions',
-        'Nagarjuni caves built by Dasaratha Maurya',
-        'Rediscovered by John Herbert Harington',
-        'First systematic archaeological survey by Cunningham',
-        'Basaha Minor Rock Edict discovered by ASI',
-        'Modern 3D laser scanning and acoustic studies'
-    ],
-    'Significance': [
-        'Height of Indian rock-cut architecture begins',
-        'First documented cave dedication in India',
-        'Chaitya arch design influences future architecture',
-        'Peak precision engineering achievement recorded',
-        'Continuation of Ajivika patronage documented',
-        'Caves re-enter historical consciousness',
-        'First scientific documentation and mapping',
-        'New Ashokan inscriptions expand knowledge',
-        'Advanced scientific analysis reveals unprecedented precision'
-    ]
-}
+def load_csv(path: Path, label: str) -> pd.DataFrame:
+    if not path.exists():
+        fail(f"{label} not found: {path}")
+    df = pd.read_csv(path)
+    if df.empty:
+        fail(f"{label} is empty: {path}")
+    return df
 
-timeline_df = pd.DataFrame(timeline_data)
-print("\n\nTIMELINE OF BARABAR CAVES")
-print("=" * 50)
-print(timeline_df.to_string(index=False))
+def main():
+    root = Path(__file__).resolve().parents[1]  # repo root
+    din = root / "data"
+    dout = din / "barabar_caves_comprehensive_data.csv"
 
-timeline_df.to_csv('barabar_timeline.csv', index=False)
-print("\n\nTimeline data saved as CSV file.")
+    geom = load_csv(din/"geometry_dimensions.csv", "geometry_dimensions.csv")
+    rough = load_csv(din/"surface_roughness_rz.csv", "surface_roughness_rz.csv")
+    ac    = load_csv(din/"acoustics_bands.csv", "acoustics_bands.csv")
+
+    check_cols(geom, REQ_GEOM, "geometry_dimensions.csv")
+    check_cols(rough, REQ_ROUGH, "surface_roughness_rz.csv")
+    check_cols(ac, REQ_AC, "acoustics_bands.csv")
+
+    # Peak T60 by cave (low-frequency extremes)
+    ac_peak = (
+        ac.sort_values(["name","T60"], ascending=[True,False])
+          .groupby("name", as_index=False)
+          .first()[["name","T60","band_hz"]]
+          .rename(columns={"T60":"peak_T60_s","band_hz":"peak_band_hz"})
+    )
+
+    # Merge to a single comprehensive CSV
+    df = (
+        geom.merge(rough[["name","rz_microns","trace_n"]], on="name", how="left")
+            .merge(ac_peak, on="name", how="left")
+    )
+
+    # Save
+    dout.parent.mkdir(parents=True, exist_ok=True)
+    df.to_csv(dout, index=False)
+    print(f"[build] wrote {dout} ({len(df)} rows)")
+    # Small stdout summary
+    print(df[["name","rz_microns","peak_T60_s","peak_band_hz"]].to_string(index=False))
+
+if __name__ == "__main__":
+    main()
