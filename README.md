@@ -1,6 +1,6 @@
 # Barabar Caves Research Project
 
-A comprehensive multi-disciplinary study of the Barabar Caves (Bihar, India) - the oldest rock-cut caves in India (3rd century BCE), combining archaeological documentation with theoretical physics frameworks.
+A comprehensive archaeological study of the Barabar Caves (Bihar, India) - the oldest rock-cut caves in India (3rd century BCE), combining rigorous archaeological documentation with interactive data visualization and modern web technologies.
 
 ## 🌐 Live Interactive Explorer
 
@@ -8,7 +8,7 @@ A comprehensive multi-disciplinary study of the Barabar Caves (Bihar, India) - t
 
 ## 🏛️ Project Overview
 
-This research project examines the remarkable Barabar Caves through both rigorous archaeological analysis and speculative theoretical physics. The caves, dating to the Mauryan period (3rd century BCE), exhibit extraordinary features including:
+This research project examines the remarkable Barabar Caves through rigorous archaeological analysis. The caves, dating to the Mauryan period (3rd century BCE), exhibit extraordinary features including:
 
 - **Mirror-finish granite surfaces** with precision of 0.466 μm RMS roughness
 - **Exceptional acoustic properties** with 58-72 second reverberation times
@@ -23,10 +23,10 @@ This research project examines the remarkable Barabar Caves through both rigorou
 - **Historical Context**: Mauryan empire chronology and Ajivika sect connections
 - **Architectural Study**: Seven cave complex with varying designs and inscriptions
 
-### Theoretical Framework
-- **Hyperchronal EFT Model**: Speculative physics framework exploring quantum-biological coupling
+### Research Framework
 - **Advanced Technology Theories**: Investigation of precision tooling and acoustic engineering
-- **Interdisciplinary Approach**: Bridging archaeology, physics, and cultural studies
+- **Interdisciplinary Approach**: Bridging archaeology, engineering, and cultural studies
+- **Quantitative Analysis**: Detailed measurements and data-driven research
 
 ### Interactive Web Platform
 - **Data Visualization**: Surface precision charts, acoustic measurements, timeline graphics
