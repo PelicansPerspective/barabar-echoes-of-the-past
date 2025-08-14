@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barabar Explorer - Archaeological Marvels of Ancient India</title>
+    <meta name="description" content="Explore the Barabar Caves - India's oldest rock-cut caves with extraordinary acoustic properties and mirror-finish granite surfaces from the 3rd century BCE.">
+    <meta name="keywords" content="Barabar Caves, archaeology, ancient India, Mauryan empire, Ashoka, rock-cut caves, acoustic properties, surface metrology">
+    <meta name="author" content="Barabar Caves Research Project">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jbogner1618.github.io/barabar-pngs/">
+    <meta property="og:title" content="Barabar Explorer - Archaeological Marvels of Ancient India">
+    <meta property="og:description" content="Interactive exploration of the Barabar Caves featuring data visualization, historical timeline, and speculative research into India's oldest rock-cut caves.">
+    <meta property="og:image" content="https://jbogner1618.github.io/barabar-pngs/barabar_caves_complete.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://jbogner1618.github.io/barabar-pngs/">
+    <meta property="twitter:title" content="Barabar Explorer - Archaeological Marvels of Ancient India">
+    <meta property="twitter:description" content="Interactive exploration of the Barabar Caves featuring data visualization, historical timeline, and speculative research.">
+    <meta property="twitter:image" content="https://jbogner1618.github.io/barabar-pngs/barabar_caves_complete.png">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <h2>Barabar Explorer</h2>
+            </div>
+            <div class="navbar-menu">
+                <button class="btn btn--secondary nav-btn active" data-view="home">Home</button>
+                <button class="btn btn--secondary nav-btn" data-view="gallery">Gallery</button>
+                <button class="btn btn--secondary nav-btn" data-view="data">Data & Charts</button>
+                <button class="btn btn--secondary nav-btn" data-view="insights">Speculative Insights</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Home View -->
+        <div id="home-view" class="view active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="container">
+                    <h1>Barabar Explorer</h1>
+                    <p class="hero-tagline">Unveiling the architectural, archaeological, and acoustic marvels of India's oldest rock-cut caves</p>
+                </div>
+            </section>
+
+            <!-- Key Metrics -->
+            <section class="metrics">
+                <div class="container">
+                    <div class="metrics-grid">
+                        <div class="card metric-card">
+                            <div class="card__body">
+                                <h3>3rd Century BCE</h3>
+                                <p>Oldest rock-cut caves in India</p>
+                            </div>
+                        </div>
+                        <div class="card metric-card">
+                            <div class="card__body">
+                                <h3>RG 0.466</h3>
+                                <p>Mirror-finish granite surfaces</p>
+                            </div>
+                        </div>
+                        <div class="card metric-card">
+                            <div class="card__body">
+                                <h3>72 seconds</h3>
+                                <p>Extraordinary reverberation time</p>
+                            </div>
+                        </div>
+                        <div class="card metric-card">
+                            <div class="card__body">
+                                <h3>7 caves</h3>
+                                <p>Across Barabar & Nagarjuni hills</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Timeline -->
+            <section class="timeline-section">
+                <div class="container">
+                    <h2>Historical Timeline</h2>
+                    <div class="timeline-container">
+                        <div id="timeline" class="timeline"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Gallery View -->
+        <div id="gallery-view" class="view">
+            <div class="container">
+                <h1>Gallery</h1>
+                <p class="view-description">Explore the visual documentation of these remarkable archaeological sites</p>
+                <div id="gallery-grid" class="gallery-grid"></div>
+            </div>
+        </div>
+
+        <!-- Data & Charts View -->
+        <div id="data-view" class="view">
+            <div class="container">
+                <h1>Data & Charts</h1>
+                <p class="view-description">Quantitative analysis of the caves' extraordinary properties</p>
+                
+                <!-- Charts Section -->
+                <div class="charts-section">
+                    <div class="chart-container">
+                        <h3>Surface Precision Analysis</h3>
+                        <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/1955da56d351c9c4217a7b075a1a5143/508b0230-8f62-486b-8b72-a48e5acb13cf/1c99578f.png" alt="Surface precision comparison chart" class="chart-image">
+                        <p class="chart-description">This analysis demonstrates the extraordinary smoothness of Barabar cave walls, with roughness grades significantly superior to modern engineering achievements. The caves achieve an RG of 0.466, making them approximately 20 times smoother than modern granite surfaces.</p>
+                    </div>
+                    
+                    <div class="chart-container">
+                        <h3>Acoustic Properties</h3>
+                        <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/1955da56d351c9c4217a7b075a1a5143/f0df1aa4-0426-4f05-8441-22d86350298a/5e356861.png" alt="Acoustic reverberation comparison chart" class="chart-image">
+                        <p class="chart-description">The acoustic properties of Barabar caves are unprecedented, with reverberation times reaching 72 seconds in Gopika Cave. This far exceeds famous architectural spaces and suggests sophisticated understanding of acoustic engineering principles.</p>
+                    </div>
+                </div>
+
+                <!-- Cave Data Table -->
+                <div class="data-table-section">
+                    <div class="table-controls">
+                        <div class="form-group">
+                            <label class="form-label" for="cave-filter">Filter by Location:</label>
+                            <select id="cave-filter" class="form-control">
+                                <option value="all">All Caves</option>
+                                <option value="Barabar">Barabar Hill</option>
+                                <option value="Nagarjuni">Nagarjuni Hill</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="table-container">
+                        <table id="caves-table" class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Location</th>
+                                    <th>Patron</th>
+                                    <th>Date</th>
+                                    <th>Type</th>
+                                    <th>Features</th>
+                                </tr>
+                            </thead>
+                            <tbody id="caves-table-body"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Speculative Insights View -->
+        <div id="insights-view" class="view">
+            <div class="container">
+                <h1>Speculative Insights</h1>
+                <p class="view-description">Forward-thinking perspectives on the advanced technologies and purposes behind these ancient marvels</p>
+                
+                <div class="disclaimer">
+                    <p><strong>Disclaimer:</strong> The following ideas are speculative and represent exploratory thinking about the advanced nature of these ancient sites. They are intended to inspire further research and investigation.</p>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header" data-target="machining">
+                            <h3>Advanced Machining Hypotheses</h3>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div id="machining" class="accordion-content">
+                            <p>The mirror-like finish achieved on the granite surfaces of Barabar caves presents a fascinating puzzle. Modern analysis reveals roughness grades (RG 0.466) that surpass contemporary machining capabilities. Several hypotheses emerge:</p>
+                            <ul>
+                                <li><strong>Ultrasonic tooling:</strong> Ancient artisans may have developed techniques involving high-frequency vibrations to achieve such precision</li>
+                                <li><strong>Chemical polishing:</strong> Advanced understanding of mineral chemistry could have enabled surface treatments unknown to us today</li>
+                                <li><strong>Lost techniques:</strong> Sophisticated mechanical processes that were recorded in texts now lost to history</li>
+                                <li><strong>Crystalline manipulation:</strong> Methods of working with granite at a molecular level, possibly involving heat and pressure applications</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" data-target="consciousness">
+                            <h3>Sonic Consciousness Theories</h3>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div id="consciousness" class="accordion-content">
+                            <p>The extraordinary 72-second reverberation times and specific acoustic properties suggest these caves were designed for more than simple shelter or worship:</p>
+                            <ul>
+                                <li><strong>Meditative enhancement:</strong> Prolonged acoustic environments may have been engineered to induce altered states of consciousness</li>
+                                <li><strong>Harmonic healing:</strong> Specific frequencies (34.4 Hz in Vapiyaka Cave) align with modern understanding of therapeutic sound waves</li>
+                                <li><strong>Neurological synchronization:</strong> Extended reverberations could facilitate brainwave entrainment and collective meditation states</li>
+                                <li><strong>Acoustic levitation:</strong> Some theories propose that specific sound combinations might have enabled material manipulation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header" data-target="civilization">
+                            <h3>Lost Civilization Scenarios</h3>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div id="civilization" class="accordion-content">
+                            <p>The technological sophistication evidenced at Barabar raises questions about the true extent of ancient Indian civilization:</p>
+                            <ul>
+                                <li><strong>Knowledge preservation:</strong> These caves may represent repositories of advanced scientific knowledge, encoded in their very structure</li>
+                                <li><strong>Technological regression:</strong> Evidence suggests capabilities that were subsequently lost, pointing to cycles of advancement and decline</li>
+                                <li><strong>Hidden networks:</strong> The precision and scale suggest coordinated efforts across vast territories, implying sophisticated organizational systems</li>
+                                <li><strong>Astronomical connections:</strong> The geometric proportions (2:3 ratios) may encode astronomical or mathematical constants</li>
+                                <li><strong>Multi-purpose facilities:</strong> Beyond religious use, these could have served as laboratories, observatories, or healing centers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox hidden">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img id="lightbox-image" src="" alt="">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
