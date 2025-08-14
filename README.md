@@ -101,7 +101,7 @@ This project represents a unique intersection of:
 
 ### Local Setup
 ```bash
-git clone https://github.com/pelicansperspective/barabar-echoes-of-the-past.git
+git clone https://github.com/PelicansPerspective/barabar-echoes-of-the-past.git
 cd barabar-echoes-of-the-past
 # Open index.html in browser for local viewing
 ```
