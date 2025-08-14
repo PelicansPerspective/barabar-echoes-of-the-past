@@ -4,7 +4,7 @@ A comprehensive archaeological study of the Barabar Caves (Bihar, India) - the o
 
 ## 🌐 Live Interactive Explorer
 
-**[View the Barabar Caves Explorer](https://jbogner1618.github.io/barabar-pngs/)**
+**[View the Barabar Caves Explorer](https://jbogner1618.github.io/barabar-echoes-of-the-past/)**
 
 ## 🏛️ Project Overview
 
