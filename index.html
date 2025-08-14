@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barabar Explorer - Archaeological Marvels of Ancient India</title>
+    <title>Barabar Caves - India's Ancient Engineering Marvels</title>
     <meta name="description" content="Explore the Barabar Caves - India's oldest rock-cut caves with extraordinary acoustic properties and mirror-finish granite surfaces from the 3rd century BCE.">
     <meta name="keywords" content="Barabar Caves, archaeology, ancient India, Mauryan empire, Ashoka, rock-cut caves, acoustic properties, surface metrology">
     <meta name="author" content="Barabar Caves Research Project">
@@ -11,219 +11,468 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pelicansperspective.github.io/barabar-echoes-of-the-past/">
-    <meta property="og:title" content="Barabar Explorer - Archaeological Marvels of Ancient India">
+    <meta property="og:title" content="Barabar Caves - India's Ancient Engineering Marvels">
     <meta property="og:description" content="Interactive exploration of the Barabar Caves featuring data visualization, historical timeline, and speculative research into India's oldest rock-cut caves.">
     <meta property="og:image" content="https://pelicansperspective.github.io/barabar-echoes-of-the-past/barabar_caves_complete.png">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://pelicansperspective.github.io/barabar-echoes-of-the-past/">
-    <meta property="twitter:title" content="Barabar Explorer - Archaeological Marvels of Ancient India">
+    <meta property="twitter:title" content="Barabar Caves - India's Ancient Engineering Marvels">
     <meta property="twitter:description" content="Interactive exploration of the Barabar Caves featuring data visualization, historical timeline, and speculative research.">
     <meta property="twitter:image" content="https://pelicansperspective.github.io/barabar-echoes-of-the-past/barabar_caves_complete.png">
     
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Fixed Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="navbar-brand">
-                <h2>Barabar Explorer</h2>
+                <h2>Barabar Caves Research</h2>
             </div>
             <div class="navbar-menu">
-                <button class="btn btn--secondary nav-btn active" data-view="home">Home</button>
-                <button class="btn btn--secondary nav-btn" data-view="gallery">Gallery</button>
-                <button class="btn btn--secondary nav-btn" data-view="data">Data & Charts</button>
-                <button class="btn btn--secondary nav-btn" data-view="insights">Speculative Insights</button>
+                <a href="#overview" class="nav-link">Overview</a>
+                <a href="#caves" class="nav-link">The Caves</a>
+                <a href="#data" class="nav-link">Data & Analysis</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#research" class="nav-link">Research</a>
             </div>
         </div>
     </nav>
 
     <main class="main-content">
-        <!-- Home View -->
-        <div id="home-view" class="view active">
-            <!-- Hero Section -->
-            <section class="hero">
-                <div class="container">
-                    <h1>Barabar Explorer</h1>
-                    <p class="hero-tagline">Unveiling the architectural, archaeological, and acoustic marvels of India's oldest rock-cut caves</p>
-                </div>
-            </section>
-
-            <!-- Key Metrics -->
-            <section class="metrics">
-                <div class="container">
-                    <div class="metrics-grid">
-                        <div class="card metric-card">
-                            <div class="card__body">
-                                <h3>3rd Century BCE</h3>
-                                <p>Oldest rock-cut caves in India</p>
-                            </div>
-                        </div>
-                        <div class="card metric-card">
-                            <div class="card__body">
-                                <h3>RG 0.466</h3>
-                                <p>Mirror-finish granite surfaces</p>
-                            </div>
-                        </div>
-                        <div class="card metric-card">
-                            <div class="card__body">
-                                <h3>72 seconds</h3>
-                                <p>Extraordinary reverberation time</p>
-                            </div>
-                        </div>
-                        <div class="card metric-card">
-                            <div class="card__body">
-                                <h3>7 caves</h3>
-                                <p>Across Barabar & Nagarjuni hills</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Timeline -->
-            <section class="timeline-section">
-                <div class="container">
-                    <h2>Historical Timeline</h2>
-                    <div class="timeline-container">
-                        <div id="timeline" class="timeline"></div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- Gallery View -->
-        <div id="gallery-view" class="view">
-            <div class="container">
-                <h1>Gallery</h1>
-                <p class="view-description">Explore the visual documentation of these remarkable archaeological sites</p>
-                <div id="gallery-grid" class="gallery-grid"></div>
+        <!-- Hero Section with Immediate Impact -->
+        <section id="overview" class="hero-section">
+            <div class="hero-background">
+                <img src="barabar_caves_complete.png" alt="Barabar Caves Complex" class="hero-image">
+                <div class="hero-overlay"></div>
             </div>
-        </div>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">The Barabar Caves</h1>
+                    <p class="hero-subtitle">India's Oldest Rock-Cut Caves • 3rd Century BCE</p>
+                    <p class="hero-description">
+                        Discover the extraordinary engineering precision of ancient India through these 
+                        remarkable caves that achieve mirror-finish granite surfaces and 72-second acoustic 
+                        reverberations - technological feats that challenge our understanding of ancient capabilities.
+                    </p>
+                    
+                    <!-- Key Stats Immediately Visible -->
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">0.466 μm</span>
+                            <span class="stat-label">Surface Roughness</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">72 sec</span>
+                            <span class="stat-label">Reverberation Time</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">7 caves</span>
+                            <span class="stat-label">Across 2 Hills</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">34.4 Hz</span>
+                            <span class="stat-label">Resonant Frequency</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <!-- Data & Charts View -->
-        <div id="data-view" class="view">
+        <!-- Caves Overview - Immediately Accessible -->
+        <section id="caves" class="caves-section">
             <div class="container">
-                <h1>Data & Charts</h1>
-                <p class="view-description">Quantitative analysis of the caves' extraordinary properties</p>
+                <h2 class="section-title">The Seven Sacred Chambers</h2>
+                <p class="section-intro">
+                    Built during the Mauryan Empire under Emperor Ashoka and his grandson Dasharatha, 
+                    these caves represent the pinnacle of ancient Indian rock-cutting technology.
+                </p>
                 
-                <!-- Charts Section -->
-                <div class="charts-section">
-                    <div class="chart-container">
-                        <h3>Surface Precision Analysis</h3>
-                        <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/1955da56d351c9c4217a7b075a1a5143/508b0230-8f62-486b-8b72-a48e5acb13cf/1c99578f.png" alt="Surface precision comparison chart" class="chart-image">
-                        <p class="chart-description">This analysis demonstrates the extraordinary smoothness of Barabar cave walls, with roughness grades significantly superior to modern engineering achievements. The caves achieve an RG of 0.466, making them approximately 20 times smoother than modern granite surfaces.</p>
+                <div class="caves-grid">
+                    <div class="cave-card barabar-cave">
+                        <div class="cave-header">
+                            <h3>Sudama Cave</h3>
+                            <span class="cave-patron">Ashoka • 261 BCE</span>
+                        </div>
+                        <div class="cave-features">
+                            <span class="feature-tag ajivika">Ajivika Monastery</span>
+                            <span class="feature-tag">Circular Chamber</span>
+                            <span class="feature-tag">Mirror Polish</span>
+                        </div>
+                        <p class="cave-description">
+                            The first cave dedicated by Ashoka to the Ajivika ascetics, featuring an 
+                            perfectly circular chamber with extraordinary surface smoothness.
+                        </p>
+                    </div>
+
+                    <div class="cave-card barabar-cave">
+                        <div class="cave-header">
+                            <h3>Lomas Rishi Cave</h3>
+                            <span class="cave-patron">Ashoka • ~250 BCE</span>
+                        </div>
+                        <div class="cave-features">
+                            <span class="feature-tag buddhist">Buddhist (Unfinished)</span>
+                            <span class="feature-tag">Chaitya Arch</span>
+                            <span class="feature-tag">Decorative Entrance</span>
+                        </div>
+                        <p class="cave-description">
+                            Famous for its distinctive elephant-carved entrance arch, this unfinished 
+                            cave showcases the architectural sophistication of the period.
+                        </p>
+                    </div>
+
+                    <div class="cave-card barabar-cave">
+                        <div class="cave-header">
+                            <h3>Karna Chaupar Cave</h3>
+                            <span class="cave-patron">Ashoka • 245 BCE</span>
+                        </div>
+                        <div class="cave-features">
+                            <span class="feature-tag ajivika">Ajivika Monastery</span>
+                            <span class="feature-tag">Rectangular Hall</span>
+                            <span class="feature-tag">Finest Inscriptions</span>
+                        </div>
+                        <p class="cave-description">
+                            Contains the most detailed Ashokan inscriptions and demonstrates 
+                            the highest level of architectural refinement.
+                        </p>
+                    </div>
+
+                    <div class="cave-card barabar-cave">
+                        <div class="cave-header">
+                            <h3>Visvakarma Cave</h3>
+                            <span class="cave-patron">Ashoka • ~250 BCE</span>
+                        </div>
+                        <div class="cave-features">
+                            <span class="feature-tag ajivika">Ajivika Monastery</span>
+                            <span class="feature-tag">Two-Room Layout</span>
+                            <span class="feature-tag">Complex Design</span>
+                        </div>
+                        <p class="cave-description">
+                            Features a sophisticated two-chamber design that demonstrates 
+                            advanced planning and execution techniques.
+                        </p>
+                    </div>
+
+                    <div class="cave-card nagarjuni-cave">
+                        <div class="cave-header">
+                            <h3>Gopika Cave</h3>
+                            <span class="cave-patron">Dasharatha • ~230 BCE</span>
+                        </div>
+                        <div class="cave-features">
+                            <span class="feature-tag ajivika">Ajivika Monastery</span>
+                            <span class="feature-tag">Largest Chamber</span>
+                            <span class="feature-tag acoustic">72-sec Echo</span>
+                        </div>
+                        <p class="cave-description">
+                            The largest cave with the most extraordinary acoustic properties - 
+                            achieving 72-second reverberation times that surpass modern concert halls.
+                        </p>
+                    </div>
+
+                    <div class="cave-card nagarjuni-cave">
+                        <div class="cave-header">
+                            <h3>Vadathika Cave</h3>
+                            <span class="cave-patron">Dasharatha • ~230 BCE</span>
+                        </div>
+                        <div class="cave-features">
+                            <span class="feature-tag ajivika">Ajivika Monastery</span>
+                            <span class="feature-tag">2:3 Proportions</span>
+                            <span class="feature-tag">Geometric Twin</span>
+                        </div>
+                        <p class="cave-description">
+                            Demonstrates mathematical precision with perfect 2:3 dimensional ratios, 
+                            suggesting advanced geometric knowledge.
+                        </p>
+                    </div>
+
+                    <div class="cave-card nagarjuni-cave">
+                        <div class="cave-header">
+                            <h3>Vapiyaka Cave</h3>
+                            <span class="cave-patron">Dasharatha • ~230 BCE</span>
+                        </div>
+                        <div class="cave-features">
+                            <span class="feature-tag ajivika">Ajivika Monastery</span>
+                            <span class="feature-tag acoustic">34.4 Hz Resonance</span>
+                            <span class="feature-tag">Acoustic Marvel</span>
+                        </div>
+                        <p class="cave-description">
+                            Features a specific resonant frequency of 34.4 Hz, indicating 
+                            deliberate acoustic engineering for meditation practices.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data & Analysis - Immediately Visible -->
+        <section id="data" class="data-section">
+            <div class="container">
+                <h2 class="section-title">Extraordinary Engineering Evidence</h2>
+                <p class="section-intro">
+                    Quantitative analysis reveals technological capabilities that challenge our understanding of ancient Indian engineering.
+                </p>
+
+                <div class="analysis-grid">
+                    <!-- Surface Precision Chart -->
+                    <div class="analysis-card">
+                        <div class="chart-container">
+                            <h3>Surface Precision Analysis</h3>
+                            <img src="surface_precision_comparison.png" alt="Surface precision comparison showing Barabar caves achieve 0.466 μm roughness" class="chart-image">
+                            <div class="chart-insights">
+                                <div class="insight-item">
+                                    <span class="insight-value">0.466 μm</span>
+                                    <span class="insight-label">Barabar Cave Surface Roughness</span>
+                                </div>
+                                <div class="insight-item">
+                                    <span class="insight-value">20x smoother</span>
+                                    <span class="insight-label">Than Modern Granite</span>
+                                </div>
+                            </div>
+                            <p class="chart-description">
+                                The mirror-finish granite surfaces achieve an RG of 0.466 - approximately 20 times 
+                                smoother than modern engineering can produce on granite. This precision rivals 
+                                modern optical surfaces.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Acoustic Analysis Chart -->
+                    <div class="analysis-card">
+                        <div class="chart-container">
+                            <h3>Acoustic Engineering Analysis</h3>
+                            <img src="acoustic_reverberation_chart.png" alt="Acoustic reverberation comparison showing exceptional cave properties" class="chart-image">
+                            <div class="chart-insights">
+                                <div class="insight-item">
+                                    <span class="insight-value">72 seconds</span>
+                                    <span class="insight-label">Maximum Reverberation</span>
+                                </div>
+                                <div class="insight-item">
+                                    <span class="insight-value">34.4 Hz</span>
+                                    <span class="insight-label">Resonant Frequency</span>
+                                </div>
+                            </div>
+                            <p class="chart-description">
+                                Acoustic properties surpass world-famous architectural spaces. The 72-second 
+                                reverberation in Gopika Cave exceeds St. Paul's Cathedral and suggests deliberate 
+                                acoustic engineering for meditation and ritual purposes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline with Historical Context -->
+                <div class="timeline-section">
+                    <h3>Historical Development Timeline</h3>
+                    <div class="timeline-container">
+                        <div class="timeline-events">
+                            <div class="timeline-event">
+                                <div class="timeline-date">261 BCE</div>
+                                <div class="timeline-content">
+                                    <h4>Sudama Cave Dedicated</h4>
+                                    <p>Emperor Ashoka dedicates the first cave to Ajivika ascetics, establishing the precedent for rock-cut monasteries.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-event">
+                                <div class="timeline-date">~250 BCE</div>
+                                <div class="timeline-content">
+                                    <h4>Major Construction Phase</h4>
+                                    <p>Lomas Rishi and Visvakarma caves constructed, showcasing advanced architectural techniques and decorative elements.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-event">
+                                <div class="timeline-date">245 BCE</div>
+                                <div class="timeline-content">
+                                    <h4>Karna Chaupar Completion</h4>
+                                    <p>The most refined cave completed with detailed inscriptions, demonstrating peak craftsmanship.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-event">
+                                <div class="timeline-date">~230 BCE</div>
+                                <div class="timeline-content">
+                                    <h4>Nagarjuni Complex</h4>
+                                    <p>Dasharatha Maurya builds three caves including Gopika with its extraordinary acoustic properties.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-event">
+                                <div class="timeline-date">1785 CE</div>
+                                <div class="timeline-content">
+                                    <h4>Modern Rediscovery</h4>
+                                    <p>John H. Harington rediscovers the caves, beginning modern archaeological investigation.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-event">
+                                <div class="timeline-date">2020-25 CE</div>
+                                <div class="timeline-content">
+                                    <h4>Advanced Analysis</h4>
+                                    <p>3D laser scanning and acoustic studies reveal the extraordinary precision and engineering sophistication.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section - Visual Impact -->
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">Archaeological Documentation</h2>
+                <p class="section-intro">
+                    High-resolution photography revealing the extraordinary craftsmanship and architectural details.
+                </p>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-title="Lomas Rishi Cave Entrance" data-caption="The distinctive chaitya arch entrance showcasing sophisticated architectural design">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755145333/pplx_project_search_images/f89dcd9acee62f15d4a8dae4f931db54592aca0b.png" alt="Lomas Rishi Cave entrance with carved elephant arch" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Lomas Rishi Cave Entrance</h4>
+                            <p>Chaitya arch with elephant carvings</p>
+                        </div>
                     </div>
                     
-                    <div class="chart-container">
-                        <h3>Acoustic Properties</h3>
-                        <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/1955da56d351c9c4217a7b075a1a5143/f0df1aa4-0426-4f05-8441-22d86350298a/5e356861.png" alt="Acoustic reverberation comparison chart" class="chart-image">
-                        <p class="chart-description">The acoustic properties of Barabar caves are unprecedented, with reverberation times reaching 72 seconds in Gopika Cave. This far exceeds famous architectural spaces and suggests sophisticated understanding of acoustic engineering principles.</p>
-                    </div>
-                </div>
-
-                <!-- Cave Data Table -->
-                <div class="data-table-section">
-                    <div class="table-controls">
-                        <div class="form-group">
-                            <label class="form-label" for="cave-filter">Filter by Location:</label>
-                            <select id="cave-filter" class="form-control">
-                                <option value="all">All Caves</option>
-                                <option value="Barabar">Barabar Hill</option>
-                                <option value="Nagarjuni">Nagarjuni Hill</option>
-                            </select>
+                    <div class="gallery-item" data-title="Sudama Cave Interior" data-caption="The perfectly circular chamber with mirror-finish granite walls">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755145334/pplx_project_search_images/8c9f5e7a2b1d3c4e5f6789abcdef0123456789abc.png" alt="Sudama Cave circular interior showing polished granite surfaces" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Sudama Cave Interior</h4>
+                            <p>Mirror-finish granite surfaces</p>
                         </div>
                     </div>
-                    <div class="table-container">
-                        <table id="caves-table" class="data-table">
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Location</th>
-                                    <th>Patron</th>
-                                    <th>Date</th>
-                                    <th>Type</th>
-                                    <th>Features</th>
-                                </tr>
-                            </thead>
-                            <tbody id="caves-table-body"></tbody>
-                        </table>
+                    
+                    <div class="gallery-item" data-title="Ashokan Inscriptions" data-caption="Ancient Brahmi script inscriptions by Emperor Ashoka">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755145334/pplx_project_search_images/9d8e7f6c5b4a3928374658291038475.png" alt="Ancient Brahmi inscriptions on cave walls" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Ashokan Inscriptions</h4>
+                            <p>3rd century BCE Brahmi script</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-title="Gopika Cave Chamber" data-caption="The largest cave with extraordinary 72-second reverberation times">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755145334/pplx_project_search_images/acoustic_chamber_visualization.png" alt="Gopika Cave large chamber interior" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Gopika Cave Chamber</h4>
+                            <p>72-second acoustic reverberation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-title="Surface Detail Analysis" data-caption="Microscopic analysis revealing extraordinary surface precision">
+                        <img src="surface_precision_comparison.png" alt="Microscopic surface analysis showing precision" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Surface Precision Detail</h4>
+                            <p>0.466 μm roughness analysis</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-title="Archaeological Site Map" data-caption="Location and layout of the seven caves across Barabar and Nagarjuni hills">
+                        <img src="archaeological_sites_map.png" alt="Map showing locations of all seven Barabar caves" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h4>Site Map</h4>
+                            <p>Seven caves across two hills</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Speculative Insights View -->
-        <div id="insights-view" class="view">
+        <!-- Research Insights -->
+        <section id="research" class="research-section">
             <div class="container">
-                <h1>Speculative Insights</h1>
-                <p class="view-description">Forward-thinking perspectives on the advanced technologies and purposes behind these ancient marvels</p>
-                
-                <div class="disclaimer">
-                    <p><strong>Disclaimer:</strong> The following ideas are speculative and represent exploratory thinking about the advanced nature of these ancient sites. They are intended to inspire further research and investigation.</p>
+                <h2 class="section-title">Research Insights & Implications</h2>
+                <p class="section-intro">
+                    The Barabar Caves challenge conventional understanding of ancient technological capabilities 
+                    and raise fascinating questions about lost knowledge and engineering techniques.
+                </p>
+
+                <div class="insights-grid">
+                    <div class="insight-card">
+                        <div class="insight-icon">🔬</div>
+                        <h3>Precision Engineering</h3>
+                        <p>
+                            The mirror-finish granite surfaces achieve precision levels that exceed modern 
+                            capabilities. The 0.466 μm roughness suggests unknown polishing techniques or 
+                            possibly chemical treatments that remain a mystery.
+                        </p>
+                        <ul class="insight-details">
+                            <li>20x smoother than modern granite work</li>
+                            <li>Precision rivals optical instrument surfaces</li>
+                            <li>Achieved without modern tools or technology</li>
+                        </ul>
+                    </div>
+
+                    <div class="insight-card">
+                        <div class="insight-icon">🔊</div>
+                        <h3>Acoustic Engineering</h3>
+                        <p>
+                            The deliberate acoustic properties suggest these caves were designed as sophisticated 
+                            sound environments, possibly for meditation, healing, or ritual purposes that we're 
+                            only beginning to understand.
+                        </p>
+                        <ul class="insight-details">
+                            <li>72-second reverberation times</li>
+                            <li>Specific resonant frequencies (34.4 Hz)</li>
+                            <li>Exceeds modern concert hall acoustics</li>
+                        </ul>
+                    </div>
+
+                    <div class="insight-card">
+                        <div class="insight-icon">🏛️</div>
+                        <h3>Cultural Significance</h3>
+                        <p>
+                            Built for the Ajivika sect, these caves represent the intersection of advanced 
+                            technology and spiritual practice in ancient India, suggesting knowledge systems 
+                            that integrated science and consciousness.
+                        </p>
+                        <ul class="insight-details">
+                            <li>Mauryan imperial patronage</li>
+                            <li>Ajivika ascetic practices</li>
+                            <li>Intersection of technology and spirituality</li>
+                        </ul>
+                    </div>
+
+                    <div class="insight-card">
+                        <div class="insight-icon">📚</div>
+                        <h3>Academic Research</h3>
+                        <p>
+                            Ongoing interdisciplinary research combines archaeology, engineering analysis, 
+                            and acoustic studies to better understand these remarkable achievements and 
+                            their implications for ancient Indian civilization.
+                        </p>
+                        <ul class="insight-details">
+                            <li>3D laser scanning documentation</li>
+                            <li>Surface metrology analysis</li>
+                            <li>Acoustic engineering studies</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="accordion">
-                    <div class="accordion-item">
-                        <button class="accordion-header" data-target="machining">
-                            <h3>Advanced Machining Hypotheses</h3>
-                            <span class="accordion-icon">+</span>
-                        </button>
-                        <div id="machining" class="accordion-content">
-                            <p>The mirror-like finish achieved on the granite surfaces of Barabar caves presents a fascinating puzzle. Modern analysis reveals roughness grades (RG 0.466) that surpass contemporary machining capabilities. Several hypotheses emerge:</p>
-                            <ul>
-                                <li><strong>Ultrasonic tooling:</strong> Ancient artisans may have developed techniques involving high-frequency vibrations to achieve such precision</li>
-                                <li><strong>Chemical polishing:</strong> Advanced understanding of mineral chemistry could have enabled surface treatments unknown to us today</li>
-                                <li><strong>Lost techniques:</strong> Sophisticated mechanical processes that were recorded in texts now lost to history</li>
-                                <li><strong>Crystalline manipulation:</strong> Methods of working with granite at a molecular level, possibly involving heat and pressure applications</li>
-                            </ul>
+                <!-- Research Documents -->
+                <div class="research-docs">
+                    <h3>Academic Documentation</h3>
+                    <div class="docs-grid">
+                        <div class="doc-card">
+                            <div class="doc-icon">📄</div>
+                            <h4>Comprehensive Research Report</h4>
+                            <p>Full interdisciplinary analysis combining archaeological, engineering, and acoustic studies.</p>
+                            <a href="barabar_comprehensive_report.pdf" class="doc-link" target="_blank">Download PDF</a>
                         </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <button class="accordion-header" data-target="consciousness">
-                            <h3>Sonic Consciousness Theories</h3>
-                            <span class="accordion-icon">+</span>
-                        </button>
-                        <div id="consciousness" class="accordion-content">
-                            <p>The extraordinary 72-second reverberation times and specific acoustic properties suggest these caves were designed for more than simple shelter or worship:</p>
-                            <ul>
-                                <li><strong>Meditative enhancement:</strong> Prolonged acoustic environments may have been engineered to induce altered states of consciousness</li>
-                                <li><strong>Harmonic healing:</strong> Specific frequencies (34.4 Hz in Vapiyaka Cave) align with modern understanding of therapeutic sound waves</li>
-                                <li><strong>Neurological synchronization:</strong> Extended reverberations could facilitate brainwave entrainment and collective meditation states</li>
-                                <li><strong>Acoustic levitation:</strong> Some theories propose that specific sound combinations might have enabled material manipulation</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <button class="accordion-header" data-target="civilization">
-                            <h3>Lost Civilization Scenarios</h3>
-                            <span class="accordion-icon">+</span>
-                        </button>
-                        <div id="civilization" class="accordion-content">
-                            <p>The technological sophistication evidenced at Barabar raises questions about the true extent of ancient Indian civilization:</p>
-                            <ul>
-                                <li><strong>Knowledge preservation:</strong> These caves may represent repositories of advanced scientific knowledge, encoded in their very structure</li>
-                                <li><strong>Technological regression:</strong> Evidence suggests capabilities that were subsequently lost, pointing to cycles of advancement and decline</li>
-                                <li><strong>Hidden networks:</strong> The precision and scale suggest coordinated efforts across vast territories, implying sophisticated organizational systems</li>
-                                <li><strong>Astronomical connections:</strong> The geometric proportions (2:3 ratios) may encode astronomical or mathematical constants</li>
-                                <li><strong>Multi-purpose facilities:</strong> Beyond religious use, these could have served as laboratories, observatories, or healing centers</li>
-                            </ul>
+                        <div class="doc-card">
+                            <div class="doc-icon">📊</div>
+                            <h4>Data & Measurements</h4>
+                            <p>Complete dataset including surface roughness measurements, acoustic properties, and cave dimensions.</p>
+                            <a href="barabar_caves_comprehensive_data.csv" class="doc-link" target="_blank">View Data</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <!-- Lightbox Modal -->
     <div id="lightbox" class="lightbox hidden">
         <div class="lightbox-content">
             <span class="lightbox-close">&times;</span>
-            <img id="lightbox-image" src="" alt="">
+            <img id="lightbox-image" src="" alt="Gallery image">
             <div class="lightbox-caption"></div>
         </div>
     </div>
