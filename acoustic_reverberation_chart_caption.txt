@@ -1,0 +1,1 @@
+Barabar values represent low-frequency reverberation extremes (e.g. ~62–72 s at 50–63 Hz); mid-frequency reverberation is much shorter. See README for details.

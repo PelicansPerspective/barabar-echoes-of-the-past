@@ -1,0 +1,19 @@
+trace_id,cave_name,surface_type,parameter,value,unit,sampling_length_mm,cutoff_wavelength_mm,device,calibration_date
+1,Sudama Cave,Polished Wall,Ra,0.466,µm,5,0.8,Bruker Dektak XT,2025-07-15
+2,Sudama Cave,Polished Wall,Rq,0.582,µm,5,0.8,Bruker Dektak XT,2025-07-15
+3,Sudama Cave,Polished Wall,Rz,9.3,µm,5,0.8,Bruker Dektak XT,2025-07-15
+4,Sudama Cave,Unpolished Floor,Ra,15.2,µm,5,0.8,Bruker Dektak XT,2025-07-15
+5,Sudama Cave,Unpolished Floor,Rz,85.7,µm,5,0.8,Bruker Dektak XT,2025-07-15
+6,Karna Chaupar,Polished Wall,Ra,0.481,µm,5,0.8,Bruker Dektak XT,2025-07-15
+7,Karna Chaupar,Polished Wall,Rq,0.601,µm,5,0.8,Bruker Dektak XT,2025-07-15
+8,Karna Chaupar,Polished Wall,Rz,9.8,µm,5,0.8,Bruker Dektak XT,2025-07-15
+9,Lomas Rishi,Polished Interior,Ra,0.510,µm,5,0.8,Bruker Dektak XT,2025-07-15
+10,Lomas Rishi,Polished Interior,Rz,10.5,µm,5,0.8,Bruker Dektak XT,2025-07-15
+11,Visvakarma,Polished Wall,Ra,0.459,µm,5,0.8,Bruker Dektak XT,2025-07-15
+12,Visvakarma,Polished Wall,Rz,9.1,µm,5,0.8,Bruker Dektak XT,2025-07-15
+13,Gopika Cave,Polished Wall,Ra,0.475,µm,5,0.8,Bruker Dektak XT,2025-07-15
+14,Gopika Cave,Polished Wall,Rz,9.6,µm,5,0.8,Bruker Dektak XT,2025-07-15
+15,Vadathika Cave,Polished Wall,Ra,0.492,µm,5,0.8,Bruker Dektak XT,2025-07-15
+16,Vadathika Cave,Polished Wall,Rz,10.1,µm,5,0.8,Bruker Dektak XT,2025-07-15
+17,Vapiyaka Cave,Polished Wall,Ra,0.488,µm,5,0.8,Bruker Dektak XT,2025-07-15
+18,Vapiyaka Cave,Polished Wall,Rz,9.9,µm,5,0.8,Bruker Dektak XT,2025-07-15

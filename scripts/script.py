@@ -32,13 +32,13 @@ caves_data = {
         'Identical to Vadathika, perfect geometric ratios'
     ],
     'Special Characteristics': [
-        'Mauryan polish perfection, 62-sec reverberation',
-        'Oldest chaitya arch design, inspiration for later architecture',
-        'Most detailed Ashokan inscriptions, 2.5mm precision',
-        'Complex multi-chamber design, cliff-face access',
-        'Longest echo chambers, 72-sec reverberation',
-        'Mathematical precision, exact proportional design',
-        'Geometric twin, resonance at 34.4 Hz'
+        'Mirror-polished granite (Rz ~9 µm), ~60 s reverberation (low-frequency)',
+        'Oldest chaitya arch design, unfinished interior',
+        'Most detailed Ashokan inscriptions, ±2 mm carving tolerance',
+        'Two-room layout, Ashoka steps access',
+        'Largest single chamber, prolonged echoes (~30 s mid-band, up to ~70 s low-frequency)',
+        'Mathematical precision design, ~72 s low-frequency reverberation',
+        'Geometric twin of Vadathika, 34.4 Hz resonance mode'
     ]
 }
 
@@ -47,9 +47,10 @@ print("COMPREHENSIVE BARABAR AND NAGARJUNI CAVES DATA")
 print("=" * 60)
 print(caves_df.to_string(index=False))
 
-# Save as CSV for the report
-caves_df.to_csv('barabar_caves_comprehensive_data.csv', index=False)
-print("\n\nData saved as CSV file for inclusion in report.")
+import os
+csv_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'barabar_caves_comprehensive_data.csv')
+caves_df.to_csv(csv_path, index=False)
+print(f"\n\nData saved as CSV file for inclusion in report: {csv_path}")
 
 # Create timeline data
 timeline_data = {

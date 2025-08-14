@@ -1,8 +1,8 @@
 import plotly.graph_objects as go
 
 # Data from the provided JSON with exact values
-locations = ["Sudama Cave", "Vadathika Cave", "Notre-Dame", "Concert Hall"]
-reverberation_seconds = [62, 72, 11, 2.5]
+locations = ["Sudama Cave (Barabar)", "Vadathika Cave (Nagarjuni)", "Notre-Dame Cathedral", "Modern Concert Hall"]
+reverberation_seconds = [62, 72, 12, 2.5]
 
 # Brand colors for each bar
 colors = ['#1FB8CD', '#DB4545', '#2E8B57', '#5D878F']
@@ -27,5 +27,8 @@ fig.update_layout(
     showlegend=False  # Locations shown on x-axis, no need for legend
 )
 
-# Save the chart
 fig.write_image("acoustic_reverberation_chart.png")
+
+# Add footnote to clarify Barabar values represent low-frequency reverberation extremes
+with open("acoustic_reverberation_chart_caption.txt", "w", encoding="utf-8") as f:
+    f.write("Barabar values represent low-frequency reverberation extremes (e.g. ~62–72 s at 50–63 Hz); mid-frequency reverberation is much shorter. See README for details.")

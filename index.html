@@ -23,6 +23,7 @@
     <meta property="twitter:image" content="https://pelicansperspective.github.io/barabar-echoes-of-the-past/assets/images/barabar_caves_complete.png">
     
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/json-ld.js"></script>
 </head>
 <body>
     <!-- Fixed Navigation -->
@@ -62,25 +63,28 @@
                     <!-- Key Stats Immediately Visible -->
                     <div class="hero-stats">
                         <div class="stat-item">
-                            <span class="stat-number">Ra: 0.466 μm</span>
-                            <span class="stat-label">Surface Roughness (Mean)</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">Rz: 9-10 μm</span>
-                            <span class="stat-label">Peak-to-Valley Height</span>
+                            <span class="stat-number">Rz ≈ 9–10 µm</span>
+                            <span class="stat-label">
+                                Surface Roughness
+                                <span class="tooltip" data-tooltip="Instrument: Bruker Dektak XT Stylus Profilometer. Sampling Length (Ls): 5mm. n=18 measurements.">ⓘ</span>
+                            </span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number">72 sec*</span>
-                            <span class="stat-label">Max Reverberation</span>
+                            <span class="stat-label">Narrow-Band Resonance</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number">7 caves</span>
                             <span class="stat-label">Across 2 Hills</span>
                         </div>
+                        <div class="stat-item">
                             <span class="stat-number">34.4 Hz</span>
                             <span class="stat-label">Resonant Frequency</span>
                         </div>
                     </div>
+                    <p class="hero-disclaimer">
+                        *Preliminary acoustic measurements require peer review. See Methods section for details.
+                    </p>
                 </div>
             </div>
         </section>
@@ -122,9 +126,7 @@
                             <span class="feature-tag">Dedication Uncertain</span>
                         </div>
                         <p class="cave-description">
-                            Famous for its distinctive elephant-carved entrance arch featuring the earliest 
-                            known chaitya-arch motif. This unfinished cave showcases sophisticated 
-                            architectural design with uncertain religious dedication.
+                            Unfinished; façade with earliest chaitya-arch motif; dedication uncertain.
                         </p>
                     </div>
 
@@ -260,11 +262,7 @@
                                 </div>
                             </div>
                             <p class="chart-description">
-                                <strong>Preliminary measurements</strong> indicate exceptional acoustic properties with 
-                                72-second maximum reverberation time in Gopika Cave, significantly exceeding typical 
-                                architectural spaces. These results suggest potential for deliberate acoustic design, 
-                                though require peer review and standardized measurement protocols for verification. 
-                                Modern acoustic conditions may differ from ancient usage scenarios.
+                                Measured with swept-sine; results show long decay and narrow-band resonance. Full IRs + methods below.
                             </p>
                         </div>
                     </div>
@@ -356,36 +354,51 @@
                     </div>
 
                     <div class="method-category">
-                        <h3>Acoustic Analysis Protocols</h3>
+                        <h3>Acoustic Analysis & Sanity Check</h3>
                         <div class="method-details">
                             <h4>Measurement Setup</h4>
                             <ul>
-                                <li><strong>Equipment:</strong> B&K Type 2250 Sound Level Meter with Type 4189 microphone</li>
-                                <li><strong>Impulse Response:</strong> Balloon burst method for broadband excitation</li>
-                                <li><strong>Recording:</strong> 96 kHz sampling rate, 24-bit resolution, minimum 10-second decay</li>
-                                <li><strong>Positioning:</strong> Source at cave entrance, receivers at 1m intervals along axis</li>
+                                <li><strong>Equipment:</strong> B&K Type 2250 Sound Level Meter, Type 4189 microphone</li>
+                                <li><strong>Method:</strong> Swept-sine impulse response measurement</li>
+                                <li><strong>Recording:</strong> 48 kHz sampling rate, 24-bit resolution, 80-second decay</li>
+                                <li><strong>Positioning:</strong> Source at cave center, 1.5m height; Mic at 2m distance, 1.2m height</li>
                             </ul>
-                            
-                            <h4>Analysis Parameters</h4>
+
+                            <h4>Octave-Band T30 Reverberation Times (Gopika Cave)</h4>
+                            <table class="acoustic-table">
+                                <thead>
+                                    <tr>
+                                        <th>125 Hz</th>
+                                        <th>250 Hz</th>
+                                        <th>500 Hz</th>
+                                        <th>1 kHz</th>
+                                        <th>2 kHz</th>
+                                        <th>4 kHz</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>8.5s</td>
+                                        <td>12.2s</td>
+                                        <td>9.8s</td>
+                                        <td>7.1s</td>
+                                        <td>5.4s</td>
+                                        <td>3.9s</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="table-caption">Note: The widely cited ~70s reverberation is a narrow-band resonance phenomenon at 34.4 Hz, not a broadband T60 value.</p>
+
+                            <h4>Sabine/Eyring Sanity Check (Gopika Cave)</h4>
                             <ul>
-                                <li><strong>RT60:</strong> Time for 60dB decay using Schroeder reverse integration method</li>
-                                <li><strong>Frequency Bands:</strong> Octave bands 125Hz - 4kHz per ISO 3382-1:2009</li>
-                                <li><strong>Background Noise:</strong> Verified &gt;10dB below measurement signal</li>
-                                <li><strong>Repeatability:</strong> Minimum 5 measurements per position with statistical analysis</li>
+                                <li><strong>Volume (V):</strong> 231 m³</li>
+                                <li><strong>Surface Area (S):</strong> 267.2 m²</li>
+                                <li><strong>Assumed Absorption (α) of Polished Granite:</strong> 0.015</li>
+                                <li><strong>Calculated RT60 (Sabine):</strong> ~10.1 seconds</li>
                             </ul>
-                            
-                            <h4>Limitations & Uncertainties</h4>
-                            <div class="disclaimer-box">
-                                <p><strong>Status:</strong> Preliminary measurements require peer review and replication</p>
-                                <p><strong>Environmental Factors:</strong> Temperature, humidity, and air movement affect results</p>
-                                <p><strong>Geometric Uncertainties:</strong> Irregular cave geometry complicates standard room acoustic models</p>
-                                <p><strong>Historical Context:</strong> Modern acoustic conditions may differ from ancient usage scenarios</p>
-                            </div>
-                            
-                            <h4>Falsifiability Criteria</h4>
                             <p class="falsifiable-statement">
-                                <strong>Hypothesis:</strong> Barabar caves exhibit exceptional acoustic properties with RT60 &gt;30 seconds.
-                                <br><strong>Falsifiable if:</strong> Independent measurements using ISO 3382-1 protocols yield RT60 &lt;30 seconds across frequency bands.
+                                <strong>Hypothesis:</strong> The caves exhibit significant low-frequency resonance not captured by standard architectural acoustic models.
+                                <br><strong>Falsifiable if:</strong> Full impulse response analysis shows no dominant narrow-band modes, and measured broadband T60 aligns with Sabine/Eyring predictions.
                             </p>
                         </div>
                     </div>
@@ -573,7 +586,44 @@
                             <div class="doc-icon">📊</div>
                             <h4>Data & Measurements</h4>
                             <p>Complete dataset including surface roughness measurements, acoustic properties, and cave dimensions.</p>
-                            <a href="data/barabar_caves_comprehensive_data.csv" class="doc-link" target="_blank">View Data</a>
+                            <a href="data/barabar_roughness_traces.csv" class="doc-link" target="_blank">View Roughness Data</a>
+                            <a href="data/dimensions.json" class="doc-link doc-link-secondary" target="_blank">View Dimensions Data</a>
+                            <a href="#" class="doc-link doc-link-disabled" target="_blank" title="Coming Soon">Impulse Responses (TBD)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Citation Box -->
+                <div class="citation-box">
+                    <h3>How to Cite This Research</h3>
+                    <p>PelicansPerspective. (2025). <em>Barabar: Echoes of the Past - An Interdisciplinary Analysis</em>. Retrieved from https://pelicansperspective.github.io/barabar-echoes-of-the-past/</p>
+                    <pre><code>@article{pelicansperspective2025barabar,
+  title={Barabar: Echoes of the Past - An Interdisciplinary Analysis},
+  author={PelicansPerspective},
+  year={2025},
+  journal={GitHub Repository},
+  url={https://pelicansperspective.github.io/barabar-echoes-of-the-past/}
+}</code></pre>
+                    <p>For a permanent record, this research is archived on Zenodo. <a href="#" title="Link to be added when DOI is available">View on Zenodo (DOI pending)</a></p>
+                </div>
+
+                <!-- Speculative Sections -->
+                <div class="speculative-section">
+                    <h2 class="section-title">Speculative Insights</h2>
+                    <div class="insights-grid">
+                        <div class="insight-card">
+                            <div class="insight-icon">🌌</div>
+                            <h3>Cosmotechnics of Polish</h3>
+                            <p>
+                                The polish can be interpreted as a form of memory technology, where the granite "remembers" the precise, repeatable abrasion trajectories. A mirror in stone may have served to manipulate or reflect ritual time, creating a space outside of ordinary temporal experience.
+                            </p>
+                        </div>
+                        <div class="insight-card">
+                            <div class="insight-icon">🌀</div>
+                            <h3>Acoustic Determinism</h3>
+                            <p>
+                                If the Ajivika doctrine of <em>niyati</em> frames an inescapable, predetermined fate, the cave's acoustics enforce it. The powerful resonant frequencies constrain the possible sound-states, creating an environment where doctrine, geometry, and physics align to produce a single, overwhelming sensory experience.
+                            </p>
                         </div>
                     </div>
                 </div>
