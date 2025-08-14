@@ -198,7 +198,7 @@ function initializeScrollAnimations() {
     }, observerOptions);
     
     // Animate cards and sections
-    const animatedElements = document.querySelectorAll('.cave-card, .analysis-card, .insight-card, .gallery-item, .timeline-event');
+    const animatedElements = document.querySelectorAll('.cave-card, .analysis-card, .insight-card, .gallery-item, .timeline-event, .method-category');
     
     animatedElements.forEach(element => {
         element.style.cssText = `
