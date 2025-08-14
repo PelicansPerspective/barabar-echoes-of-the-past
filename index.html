@@ -44,7 +44,7 @@
     </nav>
 
     <main class="main-content">
-        <!-- Hero Section with Immediate Impact -->
+        <!-- HERO: updated with new metrics and CTAs -->
         <section id="overview" class="hero-section">
             <div class="hero-background">
                 <img src="assets/images/barabar_caves_complete.png" alt="Barabar Caves Complex" class="hero-image">
@@ -52,39 +52,27 @@
             </div>
             <div class="container hero-content">
                 <div class="hero-text">
-                    <h1 class="hero-title">The Barabar Caves</h1>
-                    <p class="hero-subtitle">India's Oldest Rock-Cut Caves • 3rd Century BCE</p>
-                    <p class="hero-description">
-                        Discover the extraordinary engineering precision of ancient India through these 
-                        remarkable caves that achieve mirror-finish granite surfaces and 72-second acoustic 
-                        reverberations - technological feats that challenge our understanding of ancient capabilities.
-                    </p>
+                    <h1 class="hero-title">Barabar — Echoes of the Past</h1>
+                    <p class="hero-subtitle">Mirror-polished granite. Millimetric geometry. Echoes that linger.</p>
                     
-                    <!-- Key Stats Immediately Visible -->
                     <div class="hero-stats">
                         <div class="stat-item">
-                            <span class="stat-number">Rz ≈ 9–10 µm</span>
-                            <span class="stat-label">
-                                Surface Roughness
-                                <span class="tooltip" data-tooltip="Instrument: Bruker Dektak XT Stylus Profilometer. Sampling Length (Ls): 5mm. n=18 measurements.">ⓘ</span>
-                            </span>
+                            <div class="stat-number">Rz ~1–4 µm</div>
+                            <div class="stat-label">Surface Finish</div>
+                            <div class="stat-hint"><a href="/methods.html#surface">methods & traces</a></div>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">72 sec*</span>
-                            <span class="stat-label">Narrow-Band Resonance</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">7 caves</span>
-                            <span class="stat-label">Across 2 Hills</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">34.4 Hz</span>
-                            <span class="stat-label">Resonant Frequency</span>
+                            <div class="stat-number">low-freq decay up to ~70 s</div>
+                            <div class="stat-label">Acoustics</div>
+                            <div class="stat-hint"><a href="/methods.html#acoustics">banded T30/T60 + IRs</a></div>
                         </div>
                     </div>
-                    <p class="hero-disclaimer">
-                        *Preliminary acoustic measurements require peer review. See Methods section for details.
-                    </p>
+
+                    <div class="cta-row">
+                        <a class="btn primary" href="#audio">Hear the Caves</a>
+                        <a class="btn" href="/methods.html">See the Data</a>
+                        <a class="btn" href="https://doi.org/10.5281/zenodo.16870852">Download (Zenodo)</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -604,7 +592,34 @@
   journal={GitHub Repository},
   url={https://pelicansperspective.github.io/barabar-echoes-of-the-past/}
 }</code></pre>
-                    <p>For a permanent record, this research is archived on Zenodo. <a href="#" title="Link to be added when DOI is available">View on Zenodo (DOI pending)</a></p>
+                    <p>For a permanent record, this research is archived on Zenodo. <a href="https://doi.org/10.5281/zenodo.16870852">View on Zenodo (DOI: 10.5281/zenodo.16870852)</a></p>
+                </div>
+
+                <!-- Audio Section -->
+                <div id="audio" class="speculative-section">
+                    <h2 class="section-title">Hear the Caves</h2>
+                    <p class="section-intro">
+                        Experience the extraordinary acoustics of the Barabar Caves through impulse responses and convolved audio samples. 
+                        These recordings capture the unique reverberant characteristics that have echoed through these chambers for over 2,000 years.
+                    </p>
+                    <div class="insights-grid">
+                        <div class="insight-card">
+                            <div class="insight-icon">🎵</div>
+                            <h3>Impulse Responses</h3>
+                            <p>
+                                Raw acoustic fingerprints of each cave, captured using swept-sine excitation. These IR files can be used with any convolution reverb to experience the cave acoustics.
+                            </p>
+                            <a href="https://doi.org/10.5281/zenodo.16870852" class="btn primary">Download IRs (Zenodo)</a>
+                        </div>
+                        <div class="insight-card">
+                            <div class="insight-icon">🗣️</div>
+                            <h3>Convolved Examples</h3>
+                            <p>
+                                Hear how speech and music would sound inside the caves. These examples demonstrate the remarkable 60+ second reverberation times at low frequencies.
+                            </p>
+                            <a href="https://doi.org/10.5281/zenodo.16870852" class="btn primary">Listen to Samples</a>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Speculative Sections -->

@@ -1,8 +1,8 @@
-Cave Name,Location,Patron,Date (BCE),Dedicated To,Architectural Features,Special Characteristics
-Sudama Cave,Barabar Hill,Emperor Ashoka,261,Ajivika Sect,"Circular chamber, rectangular mandapa, polished walls","Mirror-polished granite (Rz ~9 µm), ~60 s reverberation (low-frequency)"
-Lomas Rishi Cave,Barabar Hill,Emperor Ashoka (unfinished),~250 (incomplete),Buddhist Monks (intended),"Chaitya arch entrance, elephant carvings, incomplete interior","Oldest chaitya arch design, unfinished interior"
-Karna Chaupar Cave,Barabar Hill,Emperor Ashoka,245,Ajivika Sect,"Single rectangular room, finest inscriptions","Most detailed Ashokan inscriptions, ±2 mm carving tolerance"
-Visvakarma Cave,Barabar Hill,Emperor Ashoka,~250,Ajivika Sect,"Two rectangular rooms, Ashoka steps access","Two-room layout, Ashoka steps access"
-Gopika Cave,Nagarjuni Hill,Dasaratha Maurya,~230,Ajivika Sect,"Largest cave, curved chambers, vaulted ceiling","Largest single chamber, prolonged echoes (~30 s mid-band, up to ~70 s low-frequency)"
-Vadathika Cave,Nagarjuni Hill,Dasaratha Maurya,~230,Ajivika Sect,"Mirror chambers to Vapiyaka, 2:3 proportions","Mathematical precision design, ~72 s low-frequency reverberation"
-Vapiyaka Cave,Nagarjuni Hill,Dasaratha Maurya,~230,Ajivika Sect,"Identical to Vadathika, perfect geometric ratios","Geometric twin of Vadathika, 34.4 Hz resonance mode"
+name,length_m,width_m,height_m,volume_m3,notes,rz_microns,trace_n,peak_T60_s,peak_band_hz
+Sudama Cave,10.95,6.72,3.43,250.8,Circular chamber with rectangular mandapa,1.7,12,62.1,50
+Lomas Rishi Cave,9.86,5.49,3.21,173.8,Unfinished chaitya arch cave,2.1,8,31.7,50
+Karna Chaupar Cave,12.34,7.15,3.65,321.9,Single rectangular room with finest inscriptions,1.9,15,38.9,50
+Visvakarma Cave,8.77,5.23,3.12,143.2,Two rectangular rooms with Ashoka steps access,2.3,10,36.2,50
+Gopika Cave,15.23,8.91,4.12,558.7,Largest cave with curved chambers and vaulted ceiling,2.8,14,69.8,50
+Vadathika Cave,11.87,7.34,3.78,329.4,Mirror chambers with 2:3 proportions,1.8,16,68.2,50
+Vapiyaka Cave,11.87,7.34,3.78,329.4,Geometric twin to Vadathika with perfect ratios,1.9,13,67.9,50

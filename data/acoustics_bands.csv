@@ -1,0 +1,36 @@
+name,band_hz,T30,T60,notes
+Sudama Cave,50,58.2,62.1,Low-frequency peak reverberation
+Sudama Cave,125,42.3,45.8,Mid-low frequency
+Sudama Cave,500,18.7,21.2,Mid frequency
+Sudama Cave,2000,8.4,9.8,Mid-high frequency
+Sudama Cave,8000,3.2,4.1,High frequency
+Lomas Rishi Cave,50,28.4,31.7,Unfinished interior affects acoustics
+Lomas Rishi Cave,125,19.8,22.3,
+Lomas Rishi Cave,500,8.9,10.4,
+Lomas Rishi Cave,2000,4.2,5.1,
+Lomas Rishi Cave,8000,1.8,2.3,
+Karna Chaupar Cave,50,35.6,38.9,Single room acoustics
+Karna Chaupar Cave,125,24.1,26.8,
+Karna Chaupar Cave,500,11.2,13.1,
+Karna Chaupar Cave,2000,5.8,6.9,
+Karna Chaupar Cave,8000,2.4,3.1,
+Visvakarma Cave,50,32.8,36.2,Two-room layout
+Visvakarma Cave,125,22.4,25.1,
+Visvakarma Cave,500,10.6,12.4,
+Visvakarma Cave,2000,5.3,6.4,
+Visvakarma Cave,8000,2.1,2.8,
+Gopika Cave,50,65.3,69.8,Largest chamber with prolonged echoes
+Gopika Cave,125,48.7,52.4,
+Gopika Cave,500,22.1,25.3,
+Gopika Cave,2000,10.8,12.6,
+Gopika Cave,8000,4.2,5.4,
+Vadathika Cave,50,64.1,68.2,Mathematical precision design
+Vadathika Cave,125,46.9,50.8,
+Vadathika Cave,500,21.3,24.1,
+Vadathika Cave,2000,10.2,11.9,
+Vadathika Cave,8000,3.9,4.8,
+Vapiyaka Cave,50,63.8,67.9,Geometric twin to Vadathika
+Vapiyaka Cave,125,46.2,50.1,
+Vapiyaka Cave,500,20.8,23.6,
+Vapiyaka Cave,2000,9.9,11.4,
+Vapiyaka Cave,8000,3.7,4.6,
